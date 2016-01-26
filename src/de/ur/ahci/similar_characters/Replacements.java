@@ -12,8 +12,23 @@ public class Replacements {
     static {
         replacements = new ArrayList<>();
 
-        replacements.add(new Replacement("M", "ITI", 1f));
+        replacements.add(new Replacement("M", "ITI", 0.8f));
+        replacements.add(new Replacement("N", "I1", 0.4f));
 
+        replacements.add(new Replacement("IE", "BE", 0.1f));
+
+        replacements.add(new Replacement("eut", "elt", 0.05f));
+
+        replacements.add(new Replacement("h", "b", 0.3f));
+
+        replacements.add(new Replacement("m", "in", 0.3f));
+        replacements.add(new Replacement("m", "rn", 0.7f));
+        replacements.add(new Replacement("m", "ln", 0.2f));
+
+
+        replacements.add(new Replacement("i", "l", 0.1f));
+        replacements.add(new Replacement("l", "I", 0.9f));
+        replacements.add(new Replacement("I", "l", 0.9f));
     }
 
     public static List<SimilarString> getReplacedStrings(String original) {
@@ -43,11 +58,22 @@ public class Replacements {
         }
 
         public List<SimilarString> replaces(String s) {
-            Matcher m = p.matcher(s);
+            if(s.length() < s1.length()) return new ArrayList<>();
+            String newChars;
+            String unChanged;
+            if(s.length() == s1.length()) {
+                newChars = s.substring(s.length() - s1.length());
+                unChanged = "";
+            } else {
+                newChars = s.substring(s.length() - s1.length());
+                unChanged = s.substring(0, newChars.length() + 1);
+            }
+
+            Matcher m = p.matcher(newChars); // so that only new combinations will be expanded!
             if(m.find()) {
                 List<SimilarString> matches = new ArrayList<>();
                 do {
-                    matches.add(new SimilarString(s.substring(0, m.start()) + s2 + s.substring(m.end(), s.length()), probability));
+                    matches.add(new SimilarString(unChanged + newChars.substring(0, m.start()) + s2 + newChars.substring(m.end(), newChars.length()), probability));
                 } while(m.find());
                 return matches;
             } else {

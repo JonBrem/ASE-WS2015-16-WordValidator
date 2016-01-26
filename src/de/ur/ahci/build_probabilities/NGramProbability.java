@@ -1,38 +1,52 @@
 package de.ur.ahci.build_probabilities;
 
-public class NGramProbability implements Comparable<NGramProbability> {
+import java.util.*;
 
-    private String nGram;
-    private int numOccurences;
+public class NGramProbability {
 
+    private int nGramLength;
+    private Map<String, Integer> numOccurences;
+    private long total;
 
-    public NGramProbability(String nGram, int numOccurences) {
-        this.nGram = nGram;
-        this.numOccurences = numOccurences;
+    public NGramProbability(int nGramLength) {
+        this.nGramLength = nGramLength;
+        this.numOccurences = new HashMap<>();
+        total = 0;
     }
 
-    public float getProbability(long total) {
-        return numOccurences / (float) total;
+    public void readWords(String... words) {
+        for(String word : words) {
+            parseWord(word);
+        }
     }
 
-    public int getNumOccurences() {
-        return numOccurences;
+    public void readWords(Collection<String> words) {
+        for(String word : words) {
+            parseWord(word);
+        }
     }
 
-    public void setNumOccurences(int numOccurences) {
-        this.numOccurences = numOccurences;
+    private void parseWord(String word) {
+        if(word.length() >= nGramLength) {
+            for(int i = 0; i < word.length() - nGramLength + 1; i++) {
+                String nGram = word.substring(i, i + nGramLength);
+
+                if(!numOccurences.containsKey(nGram)) {
+                    numOccurences.put(nGram, 1);
+                } else {
+                    numOccurences.put(nGram, numOccurences.get(nGram) + 1);
+                }
+                total++;
+            }
+        }
     }
 
-    public String getnGram() {
-        return nGram;
+    public float getProbability(String ngram) {
+        if(numOccurences.containsKey(ngram)) {
+            return numOccurences.get(ngram) / (float) total;
+        } else {
+            return 0;
+        }
     }
 
-    public void setnGram(String nGram) {
-        this.nGram = nGram;
-    }
-
-    @Override
-    public int compareTo(NGramProbability o) {
-        return - Integer.compare(numOccurences, o.getNumOccurences());
-    }
 }

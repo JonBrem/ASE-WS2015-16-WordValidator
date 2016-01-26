@@ -7,11 +7,11 @@ public class TupleLink {
 
     private float probabiltiy;
 
-    public TupleLink(TupleNode start, TupleNode end) {
+    public TupleLink(TupleNode start, TupleNode end, float probability) {
         this.start = start;
         this.end = end;
 
-        probabiltiy = 0;
+        this.probabiltiy = probability;
     }
 
     public TupleNode getStart() {

@@ -5,6 +5,7 @@ import java.util.Objects;
 public class Tuple {
 
     private String string;
+    private float probability;
 
     public Tuple(String s) {
         this.string = s;
@@ -25,6 +26,10 @@ public class Tuple {
         } else {
             return false;
         }
+    }
+
+    public void setProbability(float probability) {
+        this.probability = probability;
     }
 
 }

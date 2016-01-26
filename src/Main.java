@@ -1,4 +1,4 @@
-import de.ur.ahci.build_probabilities.BuildNGrams;
+import de.ur.ahci.build_probabilities.NGramProbability;
 import de.ur.ahci.training_text.TextReader;
 
 import java.io.IOException;
@@ -10,13 +10,11 @@ public class Main {
 
         try {
             List<String> words = TextReader.readText("lorem_ipsum.txt");
-            BuildNGrams nGrams2 = new BuildNGrams(2);
+            NGramProbability nGrams2 = new NGramProbability(2);
             nGrams2.readWords(words);
-            nGrams2.debugDump();
 
-            BuildNGrams nGrams3 = new BuildNGrams(3);
+            NGramProbability nGrams3 = new NGramProbability(3);
             nGrams3.readWords(words);
-            nGrams3.debugDump();
         } catch (IOException e) {
             e.printStackTrace();
         }

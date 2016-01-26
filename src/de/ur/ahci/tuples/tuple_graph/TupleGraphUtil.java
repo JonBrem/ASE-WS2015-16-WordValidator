@@ -30,7 +30,7 @@ public class TupleGraphUtil {
             currentNodes = constructGraphForRegularWord(word, tupleLength, start, currentNodes);
 
             for (TupleNode node : currentNodes) {
-                node.addLinkTo(end);
+                node.addLinkTo(end, 1f);
             }
         }
 
@@ -39,8 +39,8 @@ public class TupleGraphUtil {
 
     private static void constructGraphForShortString(String word, TupleNode start, TupleNode end) {
         TupleNode wordTuple = new TupleNode(new Tuple(word));
-        start.addLinkTo(wordTuple);
-        wordTuple.addLinkTo(end);
+        start.addLinkTo(wordTuple, 1f);
+        wordTuple.addLinkTo(end, 1f);
     }
 
     private static Set<TupleNode> constructGraphForRegularWord(String word, int tupleLength, TupleNode start, Set<TupleNode> currentNodes) {
@@ -96,17 +96,18 @@ public class TupleGraphUtil {
     }
 
     private static boolean tryToBacktrace(String val, TupleNode node, int tupleLength) {
-        Set<TupleNode> linksToNode = node.getInLinkedNodes();
+        Set<TupleLink> linksToNode = node.getInLinks();
 
         boolean hadSuccess = false;
-        for(TupleNode parentNode : linksToNode) {
+        for(TupleLink linkFromParentNode : linksToNode) {
+            TupleNode parentNode = linkFromParentNode.getStart();
             if(!parentNode.isStart()) {
                 String nodeVal = parentNode.getTuple().getString();
 
                 String newVal = nodeVal.charAt(0) + val;
                 if(newVal.length() == tupleLength) {
                     for(TupleNode parentOfParent : parentNode.getInLinkedNodes()) {
-                        parentOfParent.addLinkTo(new TupleNode(new Tuple(newVal)));
+                        parentOfParent.addLinkTo(new TupleNode(new Tuple(newVal)), linkFromParentNode.getProbabiltiy());
                     }
                     hadSuccess = true;
                 } else {
@@ -119,9 +120,9 @@ public class TupleGraphUtil {
     }
 
     private static void firstExpansion(String wordPart, TupleNode start, int tupleLength) {
-        Set<TupleNode> expandedNodes = getExpandedNodes(wordPart, tupleLength);
-        for(TupleNode tmpNode : expandedNodes) {
-            start.addLinkTo(tmpNode);
+        Set<TupleNodeP> expandedNodes = getExpandedNodes(wordPart, tupleLength);
+        for(TupleNodeP tmpNode : expandedNodes) {
+            start.addLinkTo(tmpNode.getNode(), tmpNode.getProbability());
         }
     }
 
@@ -131,12 +132,12 @@ public class TupleGraphUtil {
             if(currentNodeEnding.length() < tupleLength - 1) continue;
             String nextString = currentNodeEnding + currentChar;
 
-            Set<TupleNode> expandedNodes = getExpandedNodes(nextString, tupleLength);
+            Set<TupleNodeP> expandedNodes = getExpandedNodes(nextString, tupleLength);
 
             for (TupleNode currentNode : currentNodes) {
                 if (tupleEndsWith(currentNode, currentNodeEnding)) {
-                    for (TupleNode nextNode : expandedNodes) {
-                        currentNode.addLinkTo(nextNode);
+                    for (TupleNodeP nextNode : expandedNodes) {
+                        currentNode.addLinkTo(nextNode.getNode(), nextNode.getProbability());
                     }
                 }
             }
@@ -169,23 +170,25 @@ public class TupleGraphUtil {
         return currentNode.getTuple().getString().endsWith(currentNodeEnding) && !currentNode.getTuple().getString().equals(currentNodeEnding);
     }
 
-    private static Set<TupleNode> getExpandedNodes(String nextString, int tupleLength) {
-        Set<TupleNode> nextNodes = new HashSet<>();
-        nextNodes.add(new TupleNode(new Tuple(nextString)));
+    private static Set<TupleNodeP> getExpandedNodes(String nextString, int tupleLength) {
+        Set<TupleNodeP> nextNodes = new HashSet<>();
+        nextNodes.add(new TupleNodeP(new TupleNode(new Tuple(nextString)), 1f));
 
         List<SimilarString> similarStrings = Replacements.getReplacedStrings(nextString);
 
         for(SimilarString similarString : similarStrings) {
             String val = similarString.getString();
             if(val.length() <= tupleLength) {
-                nextNodes.add(new TupleNode(new Tuple(val)));
+                nextNodes.add(new TupleNodeP(new TupleNode(new Tuple(val)), similarString.getSimilarity()));
             } else if (val.length() > tupleLength) {
-                TupleNode current, first;
-                first = current = new TupleNode(new Tuple(val.substring(0, tupleLength)));
+                TupleNodeP first;
+                TupleNode current;
+                first = new TupleNodeP(new TupleNode(new Tuple(val.substring(0, tupleLength))), similarString.getSimilarity());
+                current = first.getNode();
 
                 for(int i = 1; i < val.length() - tupleLength + 1; i++) {
                     TupleNode next = new TupleNode(new Tuple(val.substring(i, i + tupleLength)));
-                    current.addLinkTo(next);
+                    current.addLinkTo(next, 1f);
                     current = next;
                 }
                 nextNodes.add(first);

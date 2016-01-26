@@ -2,7 +2,9 @@ package de.ur.ahci.tuples.tuple_graph;
 
 import de.ur.ahci.tuples.Tuple;
 
+import java.util.ArrayList;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import java.util.stream.Collectors;
 
@@ -44,13 +46,13 @@ public class TupleNode {
         return isEnd;
     }
 
-    public void addLinkTo(TupleNode node) {
-        this.outLinks.add(new TupleLink(this, node));
-        node.addLinkFrom(this);
+    public void addLinkTo(TupleNode node, float probability) {
+        this.outLinks.add(new TupleLink(this, node, probability));
+        node.addLinkFrom(this, probability);
     }
 
-    public void addLinkFrom(TupleNode node) {
-        this.inLinks.add(new TupleLink(node, this));
+    public void addLinkFrom(TupleNode node, float probability) {
+        this.inLinks.add(new TupleLink(node, this, probability));
     }
 
     public boolean hasLinkTo(Tuple tuple) {
@@ -131,4 +133,30 @@ public class TupleNode {
         return nextStrings;
     }
 
+    public Set<List<TupleNode>> backTrack(int steps) {
+        Set<List<TupleNode>> paths = new HashSet<>();
+        if(isStart || steps == 0) return paths;
+
+        boolean onlyParentIsStart = true;
+        for(TupleLink linkToParent : inLinks) if(!linkToParent.getStart().isStart()) onlyParentIsStart = false;
+
+        if(steps == 1 || onlyParentIsStart) {
+            List<TupleNode> thisList = new ArrayList<>();
+            thisList.add(this);
+            Set<List<TupleNode>> thisSet = new HashSet<>();
+            thisSet.add(thisList);
+            return thisSet;
+        }
+
+        for(TupleLink linkToParent : inLinks) {
+            TupleNode parent = linkToParent.getStart();
+            Set<List<TupleNode>> pathsFromParent = parent.backTrack(steps - 1);
+            for(List<TupleNode> listFromParent : pathsFromParent) {
+                listFromParent.add(0, this);
+            }
+            paths.addAll(pathsFromParent);
+        }
+
+        return paths;
+    }
 }
