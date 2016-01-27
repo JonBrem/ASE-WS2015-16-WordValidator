@@ -33,13 +33,13 @@ public class Replacements {
 
     public static List<SimilarString> getReplacedStrings(String original) {
         List<SimilarString> similarStrings = new ArrayList<>();
-
-        for(Replacement r : replacements) {
-            List<SimilarString> similarForReplacement;
-            if((similarForReplacement = r.replaces(original)) != null) {
-                similarStrings.addAll(similarForReplacement);
-            }
-        }
+//
+//        for(Replacement r : replacements) {
+//            List<SimilarString> similarForReplacement;
+//            if((similarForReplacement = r.replaces(original)) != null) {
+//                similarStrings.addAll(similarForReplacement);
+//            }
+//        }
 
         return similarStrings;
     }

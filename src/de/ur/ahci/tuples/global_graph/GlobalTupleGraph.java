@@ -32,6 +32,7 @@ public class GlobalTupleGraph {
 
             for (TupleLink link : graphStartPoints) {
                 TupleNode node = link.getEnd();
+                if(node.isEnd()) continue;
                 if (allInLinksExplored(node, exploredNodes)) {
                     Set<List<TupleNode>> backTracks = node.backTrack(backTrackSteps);
                     boostLists(backTracks);
@@ -107,18 +108,18 @@ public class GlobalTupleGraph {
         globalGraphStart.addLinkTo(listAsPath.getPath().get(0), factor);
 
         // create paths from start
-        List<TupleNode> pathAsList = new ArrayList<>();
-        for (int i = 1; i < pathAsList.size() - 1; i++) {
-            List<TupleNode> subList = new ArrayList<>();
-            for(int j = i; j < pathAsList.size(); j++) {
-                subList.add(pathAsList.get(j));
-            }
-
-            if(subList.size() > 0) {
-                Path p = new Path(subList, factor * subList.size() / (float) pathAsList.size());
-                paths.add(p);
-            }
-        }
+//        List<TupleNode> pathAsList = new ArrayList<>();
+//        for (int i = 1; i < pathAsList.size() - 1; i++) {
+//            List<TupleNode> subList = new ArrayList<>();
+//            for(int j = i; j < pathAsList.size(); j++) {
+//                subList.add(pathAsList.get(j));
+//            }
+//
+//            if(subList.size() > 0) {
+//                Path p = new Path(subList, factor * subList.size() / (float) pathAsList.size());
+//                paths.add(p);
+//            }
+//        }
     }
 
     private static boolean allInLinksExplored(TupleNode node, Set<TupleNode> exploredNodes) {
@@ -129,20 +130,38 @@ public class GlobalTupleGraph {
         return true;
     }
 
-    public static void dump(NGramProbability nGramProbability) {
+    public static void dump(NGramProbability nGramProbability, boolean wholeWords) {
         List<Path> pathsAsList = new ArrayList<>(paths);
         for(Path p : pathsAsList) p.calculateAbsoluteProbability(nGramProbability);
-        Collections.sort(pathsAsList, (o1, o2) -> Float.compare(o1.absoluteProbability, o2.absoluteProbability));
+        Collections.sort(pathsAsList, (o1, o2) -> Double.compare(o1.absoluteProbability, o2.absoluteProbability));
         Collections.reverse(pathsAsList);
 
-        pathsAsList.forEach(p -> System.out.println(p.absoluteProbability + ":\t" + p.toString()));
+        System.out.println("there should be " + globalGraphStart.buildStringsFromThisPoint().size() + " Strings.");
+        System.out.println("There are " + pathsAsList.size() + " Strings, though.");
+        if(wholeWords) {
+            pathsAsList.forEach(p -> System.out.println(p.absoluteProbability + ":\t" + p.buildWord()));
+        } else {
+            pathsAsList.forEach(p -> System.out.println(p.absoluteProbability + ":\t" + p.toString()));
+        }
+    }
 
+    public static List<StringProbability> getProbableStrings(NGramProbability nGramProbability) {
+        List<StringProbability> probabilities = new ArrayList<>();
+
+        List<Path> pathsAsList = new ArrayList<>(paths);
+        for(Path p : pathsAsList) p.calculateAbsoluteProbability(nGramProbability);
+        Collections.sort(pathsAsList, (o1, o2) -> Double.compare(o1.absoluteProbability, o2.absoluteProbability));
+        Collections.reverse(pathsAsList);
+
+        pathsAsList.forEach(p -> probabilities.add(new StringProbability(p.buildWord(), p.absoluteProbability)));
+
+        return probabilities;
     }
 
     private static class Path {
         private List<TupleNode> path;
         private float entryProbability;
-        private float absoluteProbability;
+        private double absoluteProbability;
 
         public Path(List<TupleNode> path) {
             this(path, 1f);
@@ -161,8 +180,8 @@ public class GlobalTupleGraph {
                 Tuple t1 = path.get(i).getTuple();
                 Tuple t2 = anotherPath.get(i).getTuple();
 
-                if ((t1 == null && t2 != null) || (t1 != null && t2 == null) || (t1 == null && t2 == null)) return false;
-                if (!t1.getString().equals(t2.getString())) return false;
+                if ((t1 == null && t2 != null) || (t1 != null && t2 == null)) return false;
+                if (!(t1 == null && t2 == null) && !t1.getString().equals(t2.getString())) return false;
             }
 
             return true;
@@ -212,25 +231,39 @@ public class GlobalTupleGraph {
             return s.toString();
         }
 
+        public String buildWord() {
+            StringBuilder s = new StringBuilder();
+
+            for(int i = 0; i < path.size(); i++) {
+                Tuple t = path.get(i).getTuple();
+                if(t == null) continue;
+                if(i == path.size() - 1) {
+                    s.append(t.getString());
+                } else {
+                    s.append(t.getString().charAt(0));
+                }
+            }
+
+            return s.toString();
+        }
+
         public void calculateAbsoluteProbability(NGramProbability nGramProbability) {
-            float absoluteProbability = entryProbability;
+            absoluteProbability = entryProbability;
 
             for(int i = 0; i < path.size(); i++) {
                 Tuple t = path.get(i).getTuple();
 
                 if(t != null) {
-                    float p = nGramProbability.getProbability(t.getString());
+                    double p = nGramProbability.getProbability(t.getString());
 
-                    absoluteProbability *= p + 0.5;
+                    absoluteProbability += (p - nGramProbability.averageProbability()) * 1 / nGramProbability.averageProbability();
                 }
 
                 if(i != path.size() - 1){
                     float transitionProbability = getLinkAlongPath(i).getProbabiltiy();
-                    absoluteProbability *= transitionProbability;
+                    absoluteProbability += transitionProbability;
                 }
             }
-
-            absoluteProbability *= path.size();
         }
     }
 }

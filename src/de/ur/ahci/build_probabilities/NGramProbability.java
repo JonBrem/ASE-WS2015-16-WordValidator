@@ -27,6 +27,7 @@ public class NGramProbability {
     }
 
     private void parseWord(String word) {
+        word = word.toLowerCase();
         if(word.length() >= nGramLength) {
             for(int i = 0; i < word.length() - nGramLength + 1; i++) {
                 String nGram = word.substring(i, i + nGramLength);
@@ -41,12 +42,15 @@ public class NGramProbability {
         }
     }
 
-    public float getProbability(String ngram) {
+    public double getProbability(String ngram) {
         if(numOccurences.containsKey(ngram)) {
-            return numOccurences.get(ngram) / (float) total;
+            return numOccurences.get(ngram) / (double) total;
         } else {
             return 0;
         }
     }
 
+    public double averageProbability() {
+        return numOccurences.keySet().size() / (double) total;
+    }
 }
