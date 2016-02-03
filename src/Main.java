@@ -1,39 +1,60 @@
+import de.ur.ahci.WordValidator;
 import de.ur.ahci.build_probabilities.NGramProbability;
+import de.ur.ahci.model.Frame;
 import de.ur.ahci.training_text.TextReader;
 
-import java.io.IOException;
+import java.io.*;
+import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Consumer;
 
 public class Main {
 
     public static void main(String[] args) {
+        new WordValidator().run();
 
-        try {
-            List<String> words = TextReader.readText("lorem_ipsum.txt");
-            NGramProbability nGrams2 = new NGramProbability(2);
-            nGrams2.readWords(words);
+    }
 
-            NGramProbability nGrams3 = new NGramProbability(3);
-            nGrams3.readWords(words);
-        } catch (IOException e) {
-            e.printStackTrace();
+
+    private static NGramProbability buildProbability() {
+        NGramProbability probability = new NGramProbability(3);
+
+        File folder = new File("wiki_texts");
+        for(File file : folder.listFiles()) {
+            try {
+                BufferedReader reader = new BufferedReader(new FileReader(file));
+                String line;
+                while((line = reader.readLine()) != null) {
+                    line = line.replaceAll("\\[[a-zA-Z0-9 ]+\\]", "");
+                    line = line.toLowerCase();
+                    line = line.replaceAll("[^a-zäöüß\\d\\s:]", " ");
+
+                    for(String word : line.split(" ")) {
+                        if(word.length() < 3) continue;
+                        probability.readWords(word);
+                    }
+
+                }
+
+                reader.close();
+            } catch (FileNotFoundException e) {
+                e.printStackTrace();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
         }
 
+        return probability;
+    }
 
-        //@todo main routine
 
-        // get candidates for 2-,3-,4-grams (in the right order)
-        // eg: O13ERF -> [O1, OB], [13], [BE, 3E], [ER], [EN], [RF, NF, RT, NT]
+    private static class JSONFileReader {
 
-        // for every tuple: check if previous words have those in a similar order
+        public static List<Frame> getFrames(String json) {
+            List<Frame> frames = new ArrayList<>();
 
-        // if so: merge & increase likelihood
-
-        // if not: add most likely tuple rows to list of possible words (with relative likelihood)
-        // eg: OBERF [top (hopefully)] , OBERT, OBERF
-        // BUUUT keep the tuples!! so similar things can be found & there can be corrections!!
-
-        // longer words (if the addendums are SOMEWHAT likely) should be preferred because the endings get cut off / things get cut in the middle
+            return frames;
+        }
 
     }
 }
