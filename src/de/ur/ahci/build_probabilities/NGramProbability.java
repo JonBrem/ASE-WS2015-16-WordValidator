@@ -50,6 +50,18 @@ public class NGramProbability {
         }
     }
 
+    public int getNumOccurences(String ngram) {
+        if(numOccurences.containsKey(ngram)) {
+            return numOccurences.get(ngram);
+        } else {
+            return 0;
+        }
+    }
+
+    public long getTotal() {
+        return total;
+    }
+
     public double averageProbability() {
         return numOccurences.keySet().size() / (double) total;
     }
