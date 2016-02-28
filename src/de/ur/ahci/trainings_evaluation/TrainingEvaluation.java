@@ -12,7 +12,7 @@ import java.util.*;
 public class TrainingEvaluation {
 
     public static void main(String... args) {
-        new TrainingEvaluation("training_gold.json", "training_files", "times.txt", new SimilarityCalculator() {
+        new TrainingEvaluation("training_gold.json", "training_files_juergen2", "times_j2.txt", new SimilarityCalculator() {
             @Override
             public float calculateSimilarity(Set<String> recognizedSet, Set<String> goldSet) {
                 if(recognizedSet == null) return 0;

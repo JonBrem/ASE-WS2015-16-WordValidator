@@ -1,8 +1,8 @@
 package de.ur.ahci;
 
-import de.ur.ahci.build_probabilities.NGramProbability;
 import de.ur.ahci.model.Frame;
-import de.ur.ahci.string_similarity.EqualitySimilarity;
+import de.ur.ahci.model.StringProbability;
+import de.ur.ahci.string_similarity.StringSimilarityCalculator;
 
 import java.util.*;
 
@@ -12,51 +12,16 @@ public class WordValidator {
     private Map<String, Map<String, Double>> similarityValues;
     private Map<String, StringProbability> probabilities;
     private StringSimilarityCalculator similarityCalculator;
-    private NGramProbability nGramProbability;
-
-    public WordValidator(List<Frame> frameList) {
-        this(frameList, new EqualitySimilarity(), null);
-    }
 
     public WordValidator(List<Frame> frameList, StringSimilarityCalculator similarityCalculator) {
-        this(frameList, similarityCalculator, null);
-    }
-
-    public WordValidator(List<Frame> frameList, NGramProbability nGramProbability) {
-        this(frameList, new EqualitySimilarity(), nGramProbability);
-    }
-
-    public WordValidator(List<Frame> frameList, StringSimilarityCalculator similarityCalculator, NGramProbability nGramProbability) {
         this.frameList = frameList;
         this.similarityValues = new HashMap<>();
         this.probabilities = new HashMap<>();
         this.similarityCalculator = similarityCalculator;
-        this.nGramProbability = nGramProbability;
     }
 
     public void run() {
         buildWordProbabilities();
-
-        if(nGramProbability != null) {
-            applyNGramProbabilities();
-        }
-
-        dumpWordProbabilities();
-    }
-
-    private void applyNGramProbabilities() {
-        for(String key : probabilities.keySet()) {
-            StringProbability value = probabilities.get(key);
-            String s = value.string;
-
-            double nGramLikelihoods = 1;
-            for(int i = 0; i < s.length() - 2; i++) {
-                double nGramLikelihood = nGramProbability.getProbability(s.substring(i, i + 3));
-                if(nGramLikelihood == 0) nGramLikelihood = 1 / (double) nGramProbability.getTotal();
-                nGramLikelihoods *= nGramLikelihood;
-            }
-            value.probability *= nGramLikelihoods;
-        }
     }
 
     private double getSimilarity(String word, String otherWord) {
@@ -86,15 +51,6 @@ public class WordValidator {
             Map<String, Double> map = new HashMap<>();
             map.put(otherWord, similarity);
             similarityValues.put(word, map);
-        }
-    }
-
-    private void dumpWordProbabilities() {
-        List<StringProbability> stringProbabilities = new ArrayList<>(probabilities.values());
-        Collections.sort(stringProbabilities);
-        Collections.reverse(stringProbabilities);
-        for(StringProbability sp : stringProbabilities) {
-            System.out.println(sp.string + "\t" + sp.probability);
         }
     }
 
@@ -136,20 +92,8 @@ public class WordValidator {
         }
     }
 
-    private class StringProbability implements Comparable<StringProbability> {
-        public String string;
-        public double probability;
 
-        public StringProbability(String string, double probability) {
-            this.string = string;
-            this.probability = probability;
-        }
-
-        @Override
-        public int compareTo(StringProbability stringProbability) {
-            return Double.compare(probability, stringProbability.probability);
-        }
+    public List<StringProbability> getStringProbabilities() {
+        return new ArrayList<>(probabilities.values());
     }
-
-
 }

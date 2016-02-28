@@ -1,7 +1,5 @@
 package de.ur.ahci.string_similarity;
 
-import de.ur.ahci.StringSimilarityCalculator;
-
 public class LevenshteinSimilarity implements StringSimilarityCalculator {
 
     @Override

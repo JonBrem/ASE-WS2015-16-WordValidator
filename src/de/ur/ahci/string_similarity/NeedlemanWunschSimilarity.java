@@ -1,7 +1,5 @@
 package de.ur.ahci.string_similarity;
 
-import de.ur.ahci.StringSimilarityCalculator;
-
 public class NeedlemanWunschSimilarity implements StringSimilarityCalculator {
 
     private static double INDEL = 2;
