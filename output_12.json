@@ -1,0 +1,4827 @@
+{
+    "data": [
+        {
+            "frame_6": {
+                "recognition1": {
+                    "text": "p5fa",
+                    "tlc": {
+                        "x": "230",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "275",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "1x",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": " a x",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "sN",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_7": {
+                "recognition1": {
+                    "text": "AW",
+                    "tlc": {
+                        "x": "187",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "275",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Air",
+                    "tlc": {
+                        "x": "187",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "275",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "fra",
+                    "tlc": {
+                        "x": "187",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "275",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "WM",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "3x",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "QI",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_8": {
+                "recognition1": {
+                    "text": "lVquyu",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "19",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ktgife",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "54",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "h 3ky",
+                    "tlc": {
+                        "x": "67",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "153",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "IN",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "61",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Qwv",
+                    "tlc": {
+                        "x": "143",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "210",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_9": {
+                "recognition1": {
+                    "text": "QR",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "fizih",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "av",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "fl",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": " t ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "atiw i ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "154",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "aQWa",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "326",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "mx",
+                    "tlc": {
+                        "x": "142",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "210",
+                        "y": ""
+                    }
+                },
+                "recognition9": {
+                    "text": "43",
+                    "tlc": {
+                        "x": "142",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "210",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_10": {
+                "recognition1": {
+                    "text": "339",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "135",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "wu",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "135",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "wfkx",
+                    "tlc": {
+                        "x": "67",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "147",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "un",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "27",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_11": {
+                "recognition1": {
+                    "text": "3yQf il",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "157",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "IQKAMQ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "157",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "pQJQ",
+                    "tlc": {
+                        "x": "112",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "162",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "an",
+                    "tlc": {
+                        "x": "153",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "215",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "pi",
+                    "tlc": {
+                        "x": "153",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "215",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "17",
+                    "tlc": {
+                        "x": "158",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "V1",
+                    "tlc": {
+                        "x": "158",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "4 9",
+                    "tlc": {
+                        "x": "126",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "157",
+                        "y": ""
+                    }
+                },
+                "recognition9": {
+                    "text": "VI",
+                    "tlc": {
+                        "x": "95",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "124",
+                        "y": ""
+                    }
+                },
+                "recognition10": {
+                    "text": "girf",
+                    "tlc": {
+                        "x": "230",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "276",
+                        "y": ""
+                    }
+                },
+                "recognition11": {
+                    "text": "oJ",
+                    "tlc": {
+                        "x": "140",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "202",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_12": {
+                "recognition1": {
+                    "text": "gi",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "327",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "qm",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "327",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "sv",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "327",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "irgii",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "327",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": " 3",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "327",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "ull",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "23",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "Qgrqi",
+                    "tlc": {
+                        "x": "139",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "207",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_13": {
+                "recognition1": {
+                    "text": "raw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "67",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ifl",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "21",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "xvqi",
+                    "tlc": {
+                        "x": "137",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "208",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_14": {
+                "recognition1": {
+                    "text": " W",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "152",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "  31 ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "152",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "hxwg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "152",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "ih",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "152",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "kw",
+                    "tlc": {
+                        "x": "214",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "271",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "im",
+                    "tlc": {
+                        "x": "214",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "271",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "iiga",
+                    "tlc": {
+                        "x": "86",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "153",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "ds",
+                    "tlc": {
+                        "x": "42",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "79",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_15": {
+                "recognition1": {
+                    "text": "vaf",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Wo",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "wii",
+                    "tlc": {
+                        "x": "168",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "256",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Hg",
+                    "tlc": {
+                        "x": "225",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "273",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": " Hd",
+                    "tlc": {
+                        "x": "130",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "182",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_16": {
+                "recognition1": {
+                    "text": "ghWl",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "45",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Qui",
+                    "tlc": {
+                        "x": "115",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "175",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_17": {
+                "recognition1": {
+                    "text": "ihg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "287",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_21": {
+                "recognition1": {
+                    "text": "imwg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "265",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_23": {
+                "recognition1": {
+                    "text": " M",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "230",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ilawk5",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "230",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_24": {
+                "recognition1": {
+                    "text": "if",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "196",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_25": {
+                "recognition1": {
+                    "text": "mi",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "189",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "IfQ ",
+                    "tlc": {
+                        "x": "40",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "77",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_26": {
+                "recognition1": {
+                    "text": "wg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "133",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ik",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "133",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "yiW",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "133",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_27": {
+                "recognition1": {
+                    "text": "HGWS",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Husum",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_28": {
+                "recognition1": {
+                    "text": "gev",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "64",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "man",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "64",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "uuuw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "64",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "ff4vs",
+                    "tlc": {
+                        "x": "33",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "76",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_29": {
+                "recognition1": {
+                    "text": "glg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Eqwi",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "gi",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "ishd",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "95",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_30": {
+                "recognition1": {
+                    "text": "19V",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_31": {
+                "recognition1": {
+                    "text": "N53",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "im",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "E11",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "57",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_32": {
+                "recognition1": {
+                    "text": "ha",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "vw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "75",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "DN",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "57",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Q x",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "57",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_33": {
+                "recognition1": {
+                    "text": "fg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "53",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "  ns",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "53",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": " 35li",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "57",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Win",
+                    "tlc": {
+                        "x": "93",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "117",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_36": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_37": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_38": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_39": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_40": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "wWkv",
+                    "tlc": {
+                        "x": "157",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "225",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_41": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "479",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "w95s",
+                    "tlc": {
+                        "x": "158",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "224",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_42": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zersloren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_43": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zersloren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_44": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_45": {
+                "recognition1": {
+                    "text": "Randalcerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "fIEkIk",
+                    "tlc": {
+                        "x": "488",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "576",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_46": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zersloren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Uf",
+                    "tlc": {
+                        "x": "488",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "576",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Tlf",
+                    "tlc": {
+                        "x": "488",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "576",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "Wa",
+                    "tlc": {
+                        "x": "488",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "576",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_47": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasien",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_48": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasien",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_49": {
+                "recognition1": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_50": {
+                "recognition1": {
+                    "text": "Randalnerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "E1533",
+                    "tlc": {
+                        "x": "487",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "576",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_51": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "481",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "481",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "481",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_52": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_53": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_54": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasien",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_55": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_56": {
+                "recognition1": {
+                    "text": "Randaherer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_57": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_58": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "449",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "449",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkaslen",
+                    "tlc": {
+                        "x": "449",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_59": {
+                "recognition1": {
+                    "text": "naffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "448",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ah",
+                    "tlc": {
+                        "x": "452",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "rst",
+                    "tlc": {
+                        "x": "452",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Mae",
+                    "tlc": {
+                        "x": "454",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "531",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_60": {
+                "recognition1": {
+                    "text": "Randaluerer",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "zerstoren",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Stromkasten",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "480",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Aschaffenburg",
+                    "tlc": {
+                        "x": "412",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_64": {
+                "recognition1": {
+                    "text": "mi21 ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "140",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "wg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "140",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_66": {
+                "recognition1": {
+                    "text": "w g vHw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "140",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_67": {
+                "recognition1": {
+                    "text": "wk",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "140",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Wtg tvx w3",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "140",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_68": {
+                "recognition1": {
+                    "text": "Wfcfwgnfd",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "139",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_69": {
+                "recognition1": {
+                    "text": "Wk",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "23a",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": " 1",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "HF",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "wiwwihug1",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "Alf",
+                    "tlc": {
+                        "x": "146",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "188",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_70": {
+                "recognition1": {
+                    "text": "wu",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "139",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "wihvwa",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "139",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_71": {
+                "recognition1": {
+                    "text": "ivaum",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "MF",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Wibwihw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "159",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "W x",
+                    "tlc": {
+                        "x": "146",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "188",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_72": {
+                "recognition1": {
+                    "text": "gr",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "135",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "was",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "135",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "1p c qng ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "135",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Ali",
+                    "tlc": {
+                        "x": "152",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_73": {
+                "recognition1": {
+                    "text": "gr",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "wu",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "qiqiwwkg",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Alf",
+                    "tlc": {
+                        "x": "152",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_74": {
+                "recognition1": {
+                    "text": "if",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "137",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "mi",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "137",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "NF",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "137",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "iwlifuwxf",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "137",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Alf",
+                    "tlc": {
+                        "x": "152",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "187",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_75": {
+                "recognition1": {
+                    "text": " Q",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "134",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "IEE",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "134",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "ill",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "134",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "HF",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "134",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Tgfmajhnf",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "134",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_76": {
+                "recognition1": {
+                    "text": "Mann",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "158",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "aus",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "158",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "hfwdfhw",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "158",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_77": {
+                "recognition1": {
+                    "text": "vn",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "188",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "hans",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "188",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Wwgvinwvj",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "188",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_78": {
+                "recognition1": {
+                    "text": "mE",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "148",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ig",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "148",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "arH",
+                    "tlc": {
+                        "x": "115",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "162",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "an",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "59",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "ur",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "59",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "75",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "59",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_79": {
+                "recognition1": {
+                    "text": "Ja",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Q ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "ig l",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "138",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_80": {
+                "recognition1": {
+                    "text": "s c aaw ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "96",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_81": {
+                "recognition1": {
+                    "text": "F9 3",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "112",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_82": {
+                "recognition1": {
+                    "text": "w3pQ ",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "116",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_84": {
+                "recognition1": {
+                    "text": "flf",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "22",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_85": {
+                "recognition1": {
+                    "text": "  3",
+                    "tlc": {
+                        "x": "1",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "101",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_101": {
+                "recognition1": {
+                    "text": "xxiix",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "401",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_102": {
+                "recognition1": {
+                    "text": "993531",
+                    "tlc": {
+                        "x": "186",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "335",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "WCfvczfW",
+                    "tlc": {
+                        "x": "186",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "335",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "AKNJ",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "550",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_103": {
+                "recognition1": {
+                    "text": " Eur  ai4 i",
+                    "tlc": {
+                        "x": "215",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "338",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "mcg",
+                    "tlc": {
+                        "x": "215",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "338",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "xkwbxgat",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "550",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_104": {
+                "recognition1": {
+                    "text": "u3aJ fg",
+                    "tlc": {
+                        "x": "465",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "558",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_107": {
+                "recognition1": {
+                    "text": "25",
+                    "tlc": {
+                        "x": "212",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "442",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "   55 a",
+                    "tlc": {
+                        "x": "212",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "442",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "  x jik",
+                    "tlc": {
+                        "x": "321",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "393",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_108": {
+                "recognition1": {
+                    "text": "kififjh",
+                    "tlc": {
+                        "x": "210",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "441",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ig",
+                    "tlc": {
+                        "x": "210",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "441",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "   dgai ",
+                    "tlc": {
+                        "x": "320",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "392",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "fnPHharx",
+                    "tlc": {
+                        "x": "194",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "285",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_109": {
+                "recognition1": {
+                    "text": "lernff",
+                    "tlc": {
+                        "x": "209",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "440",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "15",
+                    "tlc": {
+                        "x": "209",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "440",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_111": {
+                "recognition1": {
+                    "text": " Liig",
+                    "tlc": {
+                        "x": "207",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "437",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ufxvVQ",
+                    "tlc": {
+                        "x": "453",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "547",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_112": {
+                "recognition1": {
+                    "text": "srIQQJfiaa",
+                    "tlc": {
+                        "x": "205",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "435",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "   wag",
+                    "tlc": {
+                        "x": "314",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "387",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "qkrffa",
+                    "tlc": {
+                        "x": "452",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "546",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_113": {
+                "recognition1": {
+                    "text": "swf5E ",
+                    "tlc": {
+                        "x": "204",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "435",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "mxxxfi ",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "386",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "NnKxWQ",
+                    "tlc": {
+                        "x": "451",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "545",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_114": {
+                "recognition1": {
+                    "text": "5EI",
+                    "tlc": {
+                        "x": "191",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Kinn",
+                    "tlc": {
+                        "x": "191",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Wu",
+                    "tlc": {
+                        "x": "191",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "At",
+                    "tlc": {
+                        "x": "450",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "544",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_116": {
+                "recognition1": {
+                    "text": "xiwk",
+                    "tlc": {
+                        "x": "445",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "538",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_117": {
+                "recognition1": {
+                    "text": "Zi",
+                    "tlc": {
+                        "x": "193",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "369",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "ffwnm",
+                    "tlc": {
+                        "x": "177",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "269",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Wh ",
+                    "tlc": {
+                        "x": "177",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "269",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_118": {
+                "recognition1": {
+                    "text": "lr",
+                    "tlc": {
+                        "x": "188",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "419",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": " 15",
+                    "tlc": {
+                        "x": "188",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "419",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "xl  ",
+                    "tlc": {
+                        "x": "441",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "515",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_119": {
+                "recognition1": {
+                    "text": "ngisgfiQ",
+                    "tlc": {
+                        "x": "431",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "524",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_120": {
+                "recognition1": {
+                    "text": "5 ",
+                    "tlc": {
+                        "x": "446",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "539",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_123": {
+                "recognition1": {
+                    "text": " f319f4r33giii",
+                    "tlc": {
+                        "x": "176",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "407",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "xgi",
+                    "tlc": {
+                        "x": "286",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "358",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_124": {
+                "recognition1": {
+                    "text": "Qk",
+                    "tlc": {
+                        "x": "162",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "347",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "333g",
+                    "tlc": {
+                        "x": "162",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "347",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "VQ",
+                    "tlc": {
+                        "x": "162",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "347",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Nx",
+                    "tlc": {
+                        "x": "162",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "347",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "   uik",
+                    "tlc": {
+                        "x": "285",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "356",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_125": {
+                "recognition1": {
+                    "text": "ffmfisfili",
+                    "tlc": {
+                        "x": "167",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "410",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "cin",
+                    "tlc": {
+                        "x": "167",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "410",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "  1ix",
+                    "tlc": {
+                        "x": "289",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "361",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_126": {
+                "recognition1": {
+                    "text": "run",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "316",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Unhofuqliu",
+                    "tlc": {
+                        "x": "323",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "339",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "lumn",
+                    "tlc": {
+                        "x": "342",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "356",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "va",
+                    "tlc": {
+                        "x": "342",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "356",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "ho",
+                    "tlc": {
+                        "x": "342",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "356",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "ou",
+                    "tlc": {
+                        "x": "342",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "356",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "471",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "483",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "vn",
+                    "tlc": {
+                        "x": "471",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "483",
+                        "y": ""
+                    }
+                },
+                "recognition9": {
+                    "text": "nano",
+                    "tlc": {
+                        "x": "400",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "409",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_127": {
+                "recognition1": {
+                    "text": "llnnlne",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "317",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "so",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "317",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "nmum",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_128": {
+                "recognition1": {
+                    "text": "llama",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "nu",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "unmvu",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "337",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_129": {
+                "recognition1": {
+                    "text": "Munll",
+                    "tlc": {
+                        "x": "418",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "lu",
+                    "tlc": {
+                        "x": "399",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "413",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "oinnfl",
+                    "tlc": {
+                        "x": "399",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "413",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Mu",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "w ",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "unhdugucn",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "340",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "Iumn",
+                    "tlc": {
+                        "x": "343",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "358",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "vw",
+                    "tlc": {
+                        "x": "343",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "358",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_130": {
+                "recognition1": {
+                    "text": "lhnlhthnl",
+                    "tlc": {
+                        "x": "302",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "317",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "In",
+                    "tlc": {
+                        "x": "302",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "317",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Untu",
+                    "tlc": {
+                        "x": "323",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "336",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "344",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "355",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_131": {
+                "recognition1": {
+                    "text": "nmcnn",
+                    "tlc": {
+                        "x": "419",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "432",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "uumum",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "321",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "uvmnunum",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "321",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "mann",
+                    "tlc": {
+                        "x": "326",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "343",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "vIlDMOn",
+                    "tlc": {
+                        "x": "347",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "360",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_132": {
+                "recognition1": {
+                    "text": "nme",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "320",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "mhunum",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "320",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "n n ",
+                    "tlc": {
+                        "x": "401",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "412",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_133": {
+                "recognition1": {
+                    "text": "Vorllchli",
+                    "tlc": {
+                        "x": "232",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "253",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "rum",
+                    "tlc": {
+                        "x": "399",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "412",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "ollno",
+                    "tlc": {
+                        "x": "399",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "412",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "holcn",
+                    "tlc": {
+                        "x": "438",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "450",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Ma",
+                    "tlc": {
+                        "x": "473",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "mu",
+                    "tlc": {
+                        "x": "473",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "vu",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "Unhllu",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "341",
+                        "y": ""
+                    }
+                },
+                "recognition9": {
+                    "text": "ginn",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "341",
+                        "y": ""
+                    }
+                },
+                "recognition10": {
+                    "text": "hmm",
+                    "tlc": {
+                        "x": "344",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "359",
+                        "y": ""
+                    }
+                },
+                "recognition11": {
+                    "text": "vnvvh",
+                    "tlc": {
+                        "x": "344",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "359",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_134": {
+                "recognition1": {
+                    "text": "Ich",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "unnuuq",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "340",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "Inn",
+                    "tlc": {
+                        "x": "344",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "359",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "344",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "359",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Mu",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "vn",
+                    "tlc": {
+                        "x": "472",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "485",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "vurmlvn",
+                    "tlc": {
+                        "x": "437",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "449",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "onen",
+                    "tlc": {
+                        "x": "400",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "412",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_135": {
+                "recognition1": {
+                    "text": "onrlcac",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "321",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "niunum",
+                    "tlc": {
+                        "x": "306",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "321",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "327",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "342",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "man",
+                    "tlc": {
+                        "x": "327",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "342",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "nd",
+                    "tlc": {
+                        "x": "419",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "432",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "Nluihen",
+                    "tlc": {
+                        "x": "419",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "432",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_136": {
+                "recognition1": {
+                    "text": "r ",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "431",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "und",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "431",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "aucnen",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "431",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "llcnmnhe",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "at",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "ohuum",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "Unhduulc",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "339",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "vnbull",
+                    "tlc": {
+                        "x": "346",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "357",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_137": {
+                "recognition1": {
+                    "text": "nunmehr",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Ic",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "tobi",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "tum",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "Unuolu",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "337",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "inhalt",
+                    "tlc": {
+                        "x": "346",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "357",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "und",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "iuuoncn",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_138": {
+                "recognition1": {
+                    "text": "um",
+                    "tlc": {
+                        "x": "491",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "502",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "vo",
+                    "tlc": {
+                        "x": "491",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "502",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "nd",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "429",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "In",
+                    "tlc": {
+                        "x": "417",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "429",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "nannten",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "B1",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition7": {
+                    "text": "rbvlum",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "318",
+                        "y": ""
+                    }
+                },
+                "recognition8": {
+                    "text": "uulvn",
+                    "tlc": {
+                        "x": "326",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "340",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_139": {
+                "recognition1": {
+                    "text": "Clan",
+                    "tlc": {
+                        "x": "302",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "316",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "nluqlun",
+                    "tlc": {
+                        "x": "324",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "339",
+                        "y": ""
+                    }
+                }
+            }
+        },
+        {
+            "frame_140": {
+                "recognition1": {
+                    "text": "lluunnhr",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition2": {
+                    "text": "Br",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition3": {
+                    "text": "hulum",
+                    "tlc": {
+                        "x": "304",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "319",
+                        "y": ""
+                    }
+                },
+                "recognition4": {
+                    "text": "Unhduulrn",
+                    "tlc": {
+                        "x": "325",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "339",
+                        "y": ""
+                    }
+                },
+                "recognition5": {
+                    "text": "und",
+                    "tlc": {
+                        "x": "418",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                },
+                "recognition6": {
+                    "text": "Ilauthon",
+                    "tlc": {
+                        "x": "418",
+                        "y": ""
+                    },
+                    "brc": {
+                        "x": "430",
+                        "y": ""
+                    }
+                }
+            }
+        }
+    ]
+}
