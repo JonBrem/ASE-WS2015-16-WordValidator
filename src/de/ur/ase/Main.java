@@ -87,6 +87,8 @@ public class Main {
                 try {
                     FileWriter out =  new FileWriter(new File(file));
                     dumpWordsToWriter(strings, out);
+                    out.flush();
+                    out.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
