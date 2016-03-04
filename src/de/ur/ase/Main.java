@@ -53,7 +53,7 @@ public class Main {
 
         Set<Set<StringProbability>> mostLikelyWords = filterAndJoinWords(probabilities, similarityCalculator, frameList.size(), totalNumRecognitions);
 
-        verifyOnline(mostLikelyWords, args.length == 3? args[2] : null);
+        verifyOnline(mostLikelyWords, args.length == 3? args[2] : null, totalNumRecognitions);
     }
 
     private static void removeStopwords(List<StringProbability> probabilities) {
@@ -81,8 +81,8 @@ public class Main {
         });
     }
 
-    private static void verifyOnline(Set<Set<StringProbability>> probabilities, String file) {
-        new OnlineLookup().lookupOnline(probabilities, strings -> {
+    private static void verifyOnline(Set<Set<StringProbability>> probabilities, String file, int totalNumRecognitions) {
+        new OnlineLookup().lookupOnline(probabilities, totalNumRecognitions, strings -> {
             if(file != null) {
                 try {
                     FileWriter out =  new FileWriter(new File(file));
@@ -129,7 +129,12 @@ public class Main {
         JSONObject object = new JSONObject(fileContents);
         JSONArray recognitionData = object.getJSONArray("data");
 
-        recognitionData.forEach(frameWrapper -> addFramesToList((JSONObject) frameWrapper, frameList));
+        for(int i = 0; i < recognitionData.length(); i++) {
+            JSONObject frameWrapper = (JSONObject) recognitionData.get(i);
+            addFramesToList(frameWrapper, frameList);
+        }
+
+//        recognitionData.forEach(frameWrapper -> addFramesToList((JSONObject) frameWrapper, frameList));
 
         return frameList;
     }

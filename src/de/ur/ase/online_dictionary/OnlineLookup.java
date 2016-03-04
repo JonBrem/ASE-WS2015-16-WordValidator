@@ -5,6 +5,7 @@ import de.ur.ase.model.StringProbability;
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.nodes.Element;
+import org.jsoup.select.Collector;
 import org.jsoup.select.Elements;
 
 import java.io.IOException;
@@ -17,21 +18,23 @@ public class OnlineLookup {
     public static final String CANOO_URL = "http://www.canoo.net/services/Controller?service=canooNet&input=";
     public static final String BING_URL = "http://www.bing.com/search?q=";
 
-    public void lookupOnline(Set<Set<StringProbability>> words, Consumer<Set<String>> onFinishCallback) {
-        new LookupThread(words, onFinishCallback).start();
+    public void lookupOnline(Set<Set<StringProbability>> words, int totalNumRecognitions, Consumer<Set<String>> onFinishCallback) {
+        new LookupThread(words, onFinishCallback, totalNumRecognitions).start();
     }
 
     private class LookupThread extends Thread {
 
         private Consumer<Set<String>> onFinishCallback;
         private Set<Set<StringProbability>> words;
+        private int totalNumRecognitions;
 
         private Set<String> lookedUp;
 
-        public LookupThread(Set<Set<StringProbability>> words, Consumer<Set<String>> onFinishCallback) {
+        public LookupThread(Set<Set<StringProbability>> words, Consumer<Set<String>> onFinishCallback, int totalNumRecognitions) {
             this.words = words;
             this.onFinishCallback = onFinishCallback;
             this.lookedUp = new HashSet<>();
+            this.totalNumRecognitions = totalNumRecognitions;
         }
 
         @Override
@@ -93,12 +96,25 @@ public class OnlineLookup {
 
         private List<String> tryToCorrect(StringProbability word, boolean tryToCorrectIfNoResult) {
             if(!tryToCorrectIfNoResult) return null;
-            String correction = performBingSearch(word.string);
-            if(correction != null && correction.length() > 3 && !Stopwords.isStopword(correction) && !lookedUp.contains(correction)) {
-                word.string = correction;
+
+            BingSearchResult correction = performBingSearch(word.string);
+
+            if(correction == null) {
+                System.out.println("Correction for " + word.string + " was null");
+            } else {
+                System.out.println("Correction for " + word.string + ": ");
+                System.out.println("\t" + correction.hasCorrectedQuery() + "\t" + correction.correctedQuery + "\t" + correction.commonString + "\t");
+            }
+
+            if(correction != null && correction.hasCorrectedQuery() && !Stopwords.isStopword(correction.correctedQuery) && !lookedUp.contains(correction.correctedQuery)) {
+                word.string = correction.correctedQuery;
                 List<String> correctedResults = performCanooSearch(word, false); // must be false, otherwise: lots of recursion!!
-                if(correctedResults == null) return Arrays.asList(correction);
+                if (correctedResults == null) return Collections.singletonList(correction.correctedQuery);
                 return correctedResults;
+            } else if (correction != null && correction.commonString != null) {
+                return Collections.singletonList(correction.commonString);
+            } else if (word.probability >= totalNumRecognitions * 0.75){ // word is very likely --> just take it, probably still better than doing nothing
+                return Collections.singletonList(word.string);
             } else {
                 return null;
             }
@@ -158,18 +174,14 @@ public class OnlineLookup {
         return getBaseWord;
     }
 
-    private String performBingSearch(String string) {
+    private BingSearchResult performBingSearch(String string) {
         // @todo: lots of mentions of this very String on the results page? --> add "as is" if there is no correction!
         try {
             URL url = new URL(BING_URL + string);
             Document bingSite = Jsoup.parse(url, 5000);
-
-            Element correction = bingSite.getElementById("sp_requery");
-            if(correction != null) {
-                Elements correctionLink = correction.getElementsByTag("a");
-                if(correctionLink.size() > 0) return correctionLink.get(0).text();
-            }
-
+            BingSearchResult bingSearchResult = new BingSearchResult();
+            bingSearchResult.parseSite(bingSite);
+            return bingSearchResult;
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -188,6 +200,70 @@ public class OnlineLookup {
             }
         }
         return !atLeastOnePositiveHeadline;
+    }
+
+    private class BingSearchResult {
+        private String correctedQuery;
+        private String commonString;
+
+        public void parseSite(Document bingSite) {
+            Element correction = bingSite.getElementById("sp_requery");
+            if(correction != null) {
+                setCorrectedQuery(correction);
+            } else {
+                lookForCommonString(bingSite);
+            }
+        }
+
+        private void lookForCommonString(Document bingSite) {
+            List<StringCount> stringCounts = new ArrayList<>();
+
+            Elements searchResults = bingSite.getElementsByClass("b_algo");
+            for(Element searchResult : searchResults) {
+                Elements strongElements = searchResult.getElementsByTag("strong");
+                for(Element strongElement : strongElements) {
+                    forEveryHighlightedText(stringCounts, strongElement);
+                }
+            }
+
+            Collections.sort(stringCounts, (o1, o2) -> Integer.compare(o1.count, o2.count));
+            Collections.reverse(stringCounts);
+
+            if(stringCounts.size() > 0 && stringCounts.get(0).count >= 2) commonString = stringCounts.get(0).string;
+        }
+
+        private void forEveryHighlightedText(List<StringCount> stringCounts, Element strongElement) {
+            String strongText = strongElement.text();
+
+            boolean alreadyFound = false;
+            for(StringCount stringCount : stringCounts) {
+                if(strongText.toLowerCase().equals(stringCount.string.toLowerCase())) {
+                    stringCount.count++;
+                    alreadyFound = true;
+                    break;
+                }
+            }
+            if(!alreadyFound) {
+                StringCount newStringCount = new StringCount();
+                newStringCount.string = strongText;
+                newStringCount.count = 1;
+                stringCounts.add(newStringCount);
+            }
+        }
+
+        private void setCorrectedQuery(Element correction) {
+            Elements correctionLink = correction.getElementsByTag("a");
+            if(correctionLink.size() > 0) correctedQuery = correctionLink.get(0).text();
+        }
+
+        public boolean hasCorrectedQuery() {
+            return correctedQuery != null;
+        }
+    }
+
+    private class StringCount {
+        public String string;
+        public int count;
     }
 
 }
