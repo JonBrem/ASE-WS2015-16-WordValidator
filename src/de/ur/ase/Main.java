@@ -30,13 +30,15 @@ public class Main {
     public static void main(String... args) {
         String pathForDictionaries, filePath;
 
-        if(args.length == 0) {
+        if (args.length == 0) {
             pathForDictionaries = "";
             filePath = "output_14.json";
         } else {
             pathForDictionaries = args[0] + "/";
             filePath = args[1];
         }
+
+        configureOnlineVerification(args);
 
         List<Frame> frameList = getFrameListFromFile(filePath);
         int totalNumRecognitions = getTotalNumRecognitions(frameList);
@@ -53,7 +55,31 @@ public class Main {
 
         Set<Set<StringProbability>> mostLikelyWords = filterAndJoinWords(probabilities, similarityCalculator, frameList.size(), totalNumRecognitions);
 
-        verifyOnline(mostLikelyWords, args.length == 3? args[2] : null, totalNumRecognitions);
+        verifyOnline(mostLikelyWords, args.length >= 3 ? args[2] : null, totalNumRecognitions);
+    }
+
+    private static void configureOnlineVerification(String[] args) {
+        if(args.length >= 4) {
+            switch(Integer.parseInt(args[3])) {
+                case 1:
+                    OnlineLookup.PERFORM_BING_SEARCH = true;
+                    OnlineLookup.SEARCH_FOR_SYNONYMS_AND_HYPERNYMS = false;
+                    break;
+                case 2:
+                    OnlineLookup.PERFORM_BING_SEARCH = false;
+                    OnlineLookup.SEARCH_FOR_SYNONYMS_AND_HYPERNYMS = true;
+                    break;
+                case 3:
+                    OnlineLookup.PERFORM_BING_SEARCH = false;
+                    OnlineLookup.SEARCH_FOR_SYNONYMS_AND_HYPERNYMS = false;
+                    break;
+                default:
+                case 0:
+                    OnlineLookup.PERFORM_BING_SEARCH = true;
+                    OnlineLookup.SEARCH_FOR_SYNONYMS_AND_HYPERNYMS = true;
+                    break;
+            }
+        }
     }
 
     private static void removeStopwords(List<StringProbability> probabilities) {

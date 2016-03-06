@@ -18,6 +18,9 @@ public class OnlineLookup {
     public static final String CANOO_URL = "http://www.canoo.net/services/Controller?service=canooNet&input=";
     public static final String BING_URL = "http://www.bing.com/search?q=";
 
+    public static boolean PERFORM_BING_SEARCH = true;
+    public static boolean SEARCH_FOR_SYNONYMS_AND_HYPERNYMS = false;
+
     public void lookupOnline(Set<Set<StringProbability>> words, int totalNumRecognitions, Consumer<Set<String>> onFinishCallback) {
         new LookupThread(words, onFinishCallback, totalNumRecognitions).start();
     }
@@ -61,7 +64,7 @@ public class OnlineLookup {
                 }
 
                 try {
-                    Thread.sleep(2500 + ((long) (Math.random() * 500)));
+                    bePoliteToCanoo();
                 } catch (InterruptedException e) {
                     e.printStackTrace();
                 }
@@ -78,7 +81,9 @@ public class OnlineLookup {
                 lookedUp.add(word.string);
                 if(headline.size() > 0) {
                     if(noCanooEntryFor(headline)) {
-                        return tryToCorrect(word, tryToCorrectIfNoResult);
+                        if(PERFORM_BING_SEARCH) return tryToCorrect(word, tryToCorrectIfNoResult);
+                        else if(wordIsVeryLikely(word)) return Collections.singletonList(word.string);
+                        else return null;
                     } else {
                         List<String> resultsFromCanooPage = getResultsFromCanooPage(doc, word.string);
                         return resultsFromCanooPage;
@@ -94,26 +99,26 @@ public class OnlineLookup {
             return null;
         }
 
+        private boolean wordIsVeryLikely(StringProbability word) {
+            return word.probability >= totalNumRecognitions * 0.75;
+        }
+
         private List<String> tryToCorrect(StringProbability word, boolean tryToCorrectIfNoResult) {
             if(!tryToCorrectIfNoResult) return null;
 
             BingSearchResult correction = performBingSearch(word.string);
 
-            if(correction == null) {
-                System.out.println("Correction for " + word.string + " was null");
-            } else {
-                System.out.println("Correction for " + word.string + ": ");
-                System.out.println("\t" + correction.hasCorrectedQuery() + "\t" + correction.correctedQuery + "\t" + correction.commonString + "\t");
-            }
-
             if(correction != null && correction.hasCorrectedQuery() && !Stopwords.isStopword(correction.correctedQuery) && !lookedUp.contains(correction.correctedQuery)) {
+                try {
+                    bePoliteToCanoo();
+                } catch(Exception ignored){ignored.printStackTrace();}
                 word.string = correction.correctedQuery;
                 List<String> correctedResults = performCanooSearch(word, false); // must be false, otherwise: lots of recursion!!
                 if (correctedResults == null) return Collections.singletonList(correction.correctedQuery);
                 return correctedResults;
             } else if (correction != null && correction.commonString != null) {
                 return Collections.singletonList(correction.commonString);
-            } else if (word.probability >= totalNumRecognitions * 0.75){ // word is very likely --> just take it, probably still better than doing nothing
+            } else if (wordIsVeryLikely(word)){ // word is very likely --> just take it, probably still better than doing nothing
                 return Collections.singletonList(word.string);
             } else {
                 return null;
@@ -122,32 +127,36 @@ public class OnlineLookup {
 
     }
 
+    private void bePoliteToCanoo() throws InterruptedException {
+        Thread.sleep(5000 + ((long) (Math.random() * 500)));
+    }
+
     private List<String> getResultsFromCanooPage(Document doc, String originalWord) {
         Elements wordFormElements = doc.getElementsByClass("Indent2first");
 
-        boolean nounOrVerb = false;
+        boolean nounOrVerbOrAdjective = false;
         for(Element element : wordFormElements) {
             String text = element.text();
-            if(text.contains("Nomen")) nounOrVerb = true;
-            else if (text.contains("Verb")) nounOrVerb = true;
+            if(text.contains("Nomen")) nounOrVerbOrAdjective = true;
+            else if (text.contains("Verb")) nounOrVerbOrAdjective = true;
+            else if (text.contains("Adjektiv")) nounOrVerbOrAdjective = true;
 
             if(text.contains("geo") || text.contains("Name")) return Arrays.asList(originalWord);
         }
-        if(!nounOrVerb) return null;
+        if(!nounOrVerbOrAdjective) return null;
 
         String baseForm = getBaseWord(doc, originalWord);
 
         List<String> wordsToReturn = new ArrayList<>();
         wordsToReturn.add(baseForm);
 
-//        addSynonymsAndHypernyms(doc, wordsToReturn);
+        if(SEARCH_FOR_SYNONYMS_AND_HYPERNYMS) addSynonymsAndHypernyms(doc, wordsToReturn);
 
         return wordsToReturn;
     }
 
     private void addSynonymsAndHypernyms(Document doc, List<String> wordsToReturn) {
         Elements tableRows = doc.getElementsByTag("tr");
-        boolean breakAtNextEmptyRow = false;
         for(Element tableRow : tableRows) {
             Elements tableData = tableRow.getElementsByTag("td");
             if(tableData.size() == 2) {
@@ -157,9 +166,9 @@ public class OnlineLookup {
                     String[] alternatives = alternativeTermsString.split(", ");
                     wordsToReturn.addAll(Arrays.asList(alternatives));
 
-                    breakAtNextEmptyRow = true;
+//                    breakAtNextEmptyRow = true;
                 }
-            } else if (breakAtNextEmptyRow && tableData.size() < 2) break;
+            }
         }
     }
 
@@ -189,17 +198,17 @@ public class OnlineLookup {
     }
 
     private boolean noCanooEntryFor(Elements headlines) {
-        boolean atLeastOnePositiveHeadline = false;
+        boolean noPositiveHeadline = true;
         for(Element headline : headlines) {
             String headlineText = headline.text();
             if(!(headlineText.toLowerCase().contains("keine eintr") ||
                     headlineText.toLowerCase().contains("der gesuchte begriff ist nicht") ||
                     headlineText.toLowerCase().contains("zu viele anfr")))  {
-                atLeastOnePositiveHeadline = true;
+                noPositiveHeadline = false;
                 break;
             }
         }
-        return !atLeastOnePositiveHeadline;
+        return noPositiveHeadline;
     }
 
     private class BingSearchResult {
