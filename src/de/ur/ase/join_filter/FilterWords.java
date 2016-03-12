@@ -1,10 +1,9 @@
 package de.ur.ase.join_filter;
 
 import de.ur.ase.model.StringProbability;
+import de.ur.ase.string_similarity.StringDistanceCalculator;
 
-import java.util.HashSet;
-import java.util.List;
-import java.util.Set;
+import java.util.*;
 
 /**
  * The FilterWords class decides which words are too unlikely or too similar to other, more likely words to be sent
@@ -23,13 +22,15 @@ public class FilterWords {
      * The items in the List (the one passed as param is unaltered!) with, presumably, fewer Sets or fewer items in the
      * Sets.
      */
-    public Set<Set<StringProbability>> filterWords(List<Set<StringProbability>> sets, int totalNumRecognitions) {
+    public Set<Set<StringProbability>> filterWords(List<Set<StringProbability>> sets, int numFrames, int totalNumRecognitions, StringDistanceCalculator distanceCalculator) {
         Set<Set<StringProbability>> stringProbabilities = new HashSet<>();
 
         for(Set<StringProbability> set : sets) {
             Set<StringProbability> probabilities = getMostLikelyWords(set, totalNumRecognitions);
             stringProbabilities.add(probabilities);
         }
+
+//        trimIfTooManyPossibilities(stringProbabilities, distanceCalculator);
 
         return stringProbabilities;
     }
@@ -84,12 +85,13 @@ public class FilterWords {
 
         for(StringProbability stringProbability : wordAlternatives) {
             if(tooUnlikely(totalNumRecognitions, stringProbability)) continue; // just based on looking at the data
-            else if (stringProbability.getString().length() <= 3) continue; // simply unlikely for those to be relevant...
+            else if (tooShort(stringProbability)) continue; // simply unlikely for those to be relevant...
 
             boolean anotherIsFarMoreLikely = false;
             for(StringProbability otherProbability : wordAlternatives) {
                 if(stringProbability == otherProbability) continue;
-                if(otherProbability.getProbability() >= 1.5 * stringProbability.getProbability()) {
+
+                if(!tooShort(otherProbability) && otherProbability.getProbability() >= 8 * stringProbability.getProbability()) {
                     anotherIsFarMoreLikely = true;
                 }
             }
@@ -101,5 +103,56 @@ public class FilterWords {
 
         return likelyWords;
     }
+
+    private boolean tooShort(StringProbability stringProbability) {
+        return stringProbability.getString().length() <= 3;
+    }
+
+    private static int totalNumberOfAlternatives(Set<Set<StringProbability>> mostLikelyWords) {
+        final int[] total = {0};
+        mostLikelyWords.forEach(set -> {
+            set.forEach(sp -> {
+                total[0] += 1;
+            });
+        });
+        return total[0];
+    }
+
+    // was an idea we had because some videos have waaaay too many tags. worked fine on one test video but we decided that was by chance & cut this method.
+//    private void trimIfTooManyPossibilities(Set<Set<StringProbability>> stringProbabilities, StringDistanceCalculator distanceCalculator) {
+//        if(stringProbabilities.size() > 15 || totalNumberOfAlternatives(stringProbabilities) > 50) {
+//            List<Double> totals = new ArrayList<>();
+//            for(Set<StringProbability> set : stringProbabilities) {
+//                double total = 0;
+//                for(StringProbability sp : set) {
+//                    total += sp.probability;
+//                }
+//                totals.add(total);
+//            }
+//            if(totals.size() == 0) return;
+//
+//            Collections.sort(totals);
+//            Collections.reverse(totals);
+//
+//            double threshold;
+//            if(stringProbabilities.size() > 15) {
+//                threshold = totals.get(15);
+//            } else {
+//                threshold = totals.get(totals.size() / 2);
+//            }
+//
+//
+//            Iterator<Set<StringProbability>> iterator = stringProbabilities.iterator();
+//            while(iterator.hasNext()) {
+//                Set<StringProbability> set = iterator.next();
+//                double total = 0;
+//                for(StringProbability sp : set) {
+//                    total += sp.probability;
+//                }
+//                if(total < threshold) iterator.remove();
+//            }
+//
+//        }
+//    }
 
 }

@@ -33,7 +33,7 @@ public class Main {
 
         if (args.length == 0) {
             pathForDictionaries = "";
-            filePath = "output_1000.json";
+            filePath = "save_good/output_1001.json";
         } else {
             pathForDictionaries = args[0] + "/";
             filePath = args[1];
@@ -45,9 +45,9 @@ public class Main {
 
         List<Frame> frameList = getFrameListFromFile(filePath);
         int totalNumRecognitions = getTotalNumRecognitions(frameList);
-        StringDistanceCalculator similarityCalculator = new NeedlemanWunschDistance();
+        StringDistanceCalculator distanceCalculator = new NeedlemanWunschDistance();
 
-        WordValidator validator = new WordValidator(frameList, similarityCalculator);
+        WordValidator validator = new WordValidator(frameList, distanceCalculator);
         validator.run();
         List<StringProbability> probabilities = validator.getStringProbabilities();
 
@@ -56,8 +56,8 @@ public class Main {
         applyNGramProbabilityBoost(probabilities, pathForDictionaries);
         applyOfflineDictionaryBoost(probabilities, pathForDictionaries);
 
-        Set<Set<StringProbability>> mostLikelyWords = filterAndJoinWords(probabilities, similarityCalculator, totalNumRecognitions);
 
+        Set<Set<StringProbability>> mostLikelyWords = filterAndJoinWords(probabilities, distanceCalculator, frameList.size(), totalNumRecognitions);
         verifyOnline(mostLikelyWords, args.length >= 3 ? args[2] : null, totalNumRecognitions);
     }
 
@@ -152,7 +152,7 @@ public class Main {
     }
 
     private static void removeDuplicateWords(List<StringProbability> probabilities) {
-        List<Integer> toRemove = new ArrayList<>();
+        Set<Integer> toRemove = new HashSet<>();
 
         for(int i = 0; i < probabilities.size() - 1; i++) {
             for(int j = i + 1; j < probabilities.size(); j++) {
@@ -164,9 +164,11 @@ public class Main {
             }
         }
 
-        Collections.reverse(toRemove); // start with highest because removing from the end doesn't cause problems, removing earlier indices does.
-        for(int i = 0; i < toRemove.size(); i++) {
-            probabilities.remove(i);
+        List<Integer> asList = new ArrayList<>(toRemove);
+        Collections.sort(asList);
+        Collections.reverse(asList); // start with highest because removing from the end doesn't cause problems, removing earlier indices does.
+        for (Integer i : asList) {
+            probabilities.remove(i.intValue());
         }
     }
 
@@ -185,12 +187,11 @@ public class Main {
      * (if they were too unlikely)
      */
     private static Set<Set<StringProbability>> filterAndJoinWords(List<StringProbability> probabilities,
-                                                                  StringDistanceCalculator distanceCalculator, int totalNumRecognitions) {
+                                                                  StringDistanceCalculator distanceCalculator, int numFrames, int totalNumRecognitions) {
         JoinWords joinWords = new JoinWords();
         FilterWords filterWords = new FilterWords();
-        return filterWords.filterWords(joinWords.joinWords(probabilities, distanceCalculator), totalNumRecognitions);
+        return filterWords.filterWords(joinWords.joinWords(probabilities, distanceCalculator), numFrames, totalNumRecognitions, distanceCalculator);
     }
-
 
     /**
      * If a word appears in the list of german words we downloaded, we assume it is far more likely that it actually

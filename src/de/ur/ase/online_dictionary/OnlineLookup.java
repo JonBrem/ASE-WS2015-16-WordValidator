@@ -113,6 +113,7 @@ public class OnlineLookup {
                 Document doc = Jsoup.parse(url, 5000);
 
                 Elements headline = doc.getElementsByClass("Headline");
+
                 lookedUp.add(word.getString());
                 if(headline.size() > 0) {
                     if(noCanooEntryFor(headline)) {
@@ -193,15 +194,16 @@ public class OnlineLookup {
         Elements wordFormElements = doc.getElementsByClass("Indent2first");
 
         boolean nounOrVerbOrAdjective = false;
+        boolean hasWordFormElement = wordFormElements.size() > 0;
         for(Element element : wordFormElements) {
             String text = element.text();
-            if(text.contains("Nomen")) nounOrVerbOrAdjective = true;
+            if (text.contains("Nomen")) nounOrVerbOrAdjective = true;
             else if (text.contains("Verb")) nounOrVerbOrAdjective = true;
             else if (text.contains("Adjektiv")) nounOrVerbOrAdjective = true;
 
-            if(text.contains("geo") || text.contains("Name")) return Arrays.asList(originalWord);
+            if(text.contains("geo") || text.contains("Name")) return Collections.singletonList(originalWord);
         }
-        if(!nounOrVerbOrAdjective) return null;
+        if(hasWordFormElement && !nounOrVerbOrAdjective) return null;
 
         String baseForm = getBaseWord(doc, originalWord.getString());
 
@@ -229,10 +231,9 @@ public class OnlineLookup {
                     String[] alternatives = alternativeTermsString.split(", ");
 
                     for(String a : alternatives) {
+                        if(a.contains("(")) continue;
                         wordsToReturn.add(new StringProbability(a, originalProbability));
                     }
-
-//                    breakAtNextEmptyRow = true;
                 }
             }
         }
