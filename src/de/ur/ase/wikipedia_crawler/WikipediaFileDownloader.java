@@ -27,25 +27,22 @@ public class WikipediaFileDownloader {
 
     public void run() {
         List<String> pages = readPagesList("excellent_articles.txt");
-        new Thread(new Runnable() {
-            @Override
-            public void run() {
-                for(int i = 0; i < pages.size(); i++) {
-                    String url = "https://de.wikipedia.org" + pages.get(i);
+        new Thread(() -> {
+            for(int i = 0; i < pages.size(); i++) {
+                String url = "https://de.wikipedia.org" + pages.get(i);
 
-                    new Thread(new FileDownloadThread(url, doc -> {
-                        try {
-                            onPageDownloaded(doc);
-                        } catch (Exception e) {
-                            e.printStackTrace();
-                        }
-                    })).start();
-
+                new Thread(new FileDownloadThread(url, doc -> {
                     try {
-                        Thread.sleep(5000);
+                        onPageDownloaded(doc);
                     } catch (Exception e) {
                         e.printStackTrace();
                     }
+                })).start();
+
+                try {
+                    Thread.sleep(5000);
+                } catch (Exception e) {
+                    e.printStackTrace();
                 }
             }
         }).start();
@@ -61,8 +58,6 @@ public class WikipediaFileDownloader {
             }
 
             reader.close();
-        } catch (FileNotFoundException e) {
-            e.printStackTrace();
         } catch (IOException e) {
             e.printStackTrace();
         }

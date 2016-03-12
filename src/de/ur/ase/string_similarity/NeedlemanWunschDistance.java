@@ -1,5 +1,11 @@
 package de.ur.ase.string_similarity;
 
+/**
+ * One of the three DistanceCalculator that were actually implemented
+ * (one was just "strings are equal? -> distance = 0, else -> 1" and just for testing).
+ * Read up on the NeedlemanWunsch algorithm online (e.g. <a href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithmhttps://de.wikipedia.org/wiki/Levenshtein-Distanz">wikipedia</a>)
+ * to find out more!
+ */
 public class NeedlemanWunschDistance implements StringDistanceCalculator {
 
     private static double INDEL = 2;
@@ -10,18 +16,45 @@ public class NeedlemanWunschDistance implements StringDistanceCalculator {
     private double match;
     private double mismatch;
 
+    /**
+     * One of the three DistanceCalculator that were actually implemented
+     * (one was just "strings are equal? -> distance = 0, else -> 1" and just for testing).
+     * Read up on the NeedlemanWunsch algorithm online (e.g. <a href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithmhttps://de.wikipedia.org/wiki/Levenshtein-Distanz">wikipedia</a>)
+     * to find out more!
+     *
+     * Same as {@link NeedlemanWunschDistance(double, double, double)} constructor using the values
+     * {@link #INDEL}, {@link #MATCH} and {@link #MISMATCH}.
+     */
     public NeedlemanWunschDistance() {
         this.indel = INDEL;
         this.match = MATCH;
         this.mismatch = MISMATCH;
     }
 
+    /**
+     * One of the three DistanceCalculator that were actually implemented
+     * (one was just "strings are equal? -> distance = 0, else -> 1" and just for testing).
+     * Read up on the NeedlemanWunsch algorithm online (e.g. <a href="https://en.wikipedia.org/wiki/Needleman%E2%80%93Wunsch_algorithmhttps://de.wikipedia.org/wiki/Levenshtein-Distanz">wikipedia</a>)
+     * to find out more!
+     * That also explains what the parameters mean.
+     */
     public NeedlemanWunschDistance(double indel, double match, double mismatch) {
         this.indel = indel;
         this.match = match;
         this.mismatch = mismatch;
     }
 
+    /**
+     * Calculates the Needleman Wunsch String distance between the two words.
+     *
+     * @param word1
+     * one of the two words.
+     * @param word2
+     * the other word.
+     * @return
+     * The Levenshtein Distance between the words, in relation to the longer word's length (0 == equal, 1 == same length,
+     * all characters different (just an example), 2 == completely different)
+     */
     @Override
     public double getDistance(String word1, String word2) {
         NeedlemanWunschMatrix matrix = new NeedlemanWunschMatrix(word1, word2, indel, match, mismatch);
@@ -31,8 +64,11 @@ public class NeedlemanWunschDistance implements StringDistanceCalculator {
         return matrix.getDifference() / longerWordLength;
     }
 
-
+    /**
+     * Helper class to calculate the Needleman-Wunsch-Character-Chain-Similarity between two chains
+     */
     private static class NeedlemanWunschMatrix {
+
         private final double indel;
         private final double match;
         private final double mismatch;
@@ -110,7 +146,9 @@ public class NeedlemanWunschDistance implements StringDistanceCalculator {
 
     }
 
-
+    /**
+     * For testing & debugging (not important for the deployed version)
+     */
     public static void main(String... args) {
         NeedlemanWunschMatrix test = new NeedlemanWunschMatrix("gattaca", "gattacaii", INDEL, MATCH, MISMATCH);
         test.run();

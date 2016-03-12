@@ -9,6 +9,6 @@ public interface OfflineDictionary {
      * @param word any string
      * @return whether or not the dictionary contains the word
      */
-    public boolean contains(String word);
+    boolean contains(String word);
 
 }

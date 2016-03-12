@@ -6,6 +6,11 @@ import de.ur.ase.string_similarity.StringDistanceCalculator;
 
 import java.util.*;
 
+/**
+ * The WordValidator assigns similarities to the words the text recognition tool recognized in a video.
+ * It uses a {@link StringDistanceCalculator} to determine which Strings are equal or close to equal and likely
+ * refer to the same "actual" String in the video.
+ */
 public class WordValidator {
 
     private List<Frame> frameList;
@@ -13,6 +18,16 @@ public class WordValidator {
     private Map<String, StringProbability> probabilities;
     private StringDistanceCalculator distanceCalculator;
 
+    /**
+     * The WordValidator assigns similarities to the words the text recognition tool recognized in a video.
+     * It uses a {@link StringDistanceCalculator} to determine which Strings are equal or close to equal and likely
+     * refer to the same "actual" String in the video.
+     *
+     * @param frameList
+     * List of Frame objects, likely parsed from a .json file the text recognition tool created.
+     * @param distanceCalculator
+     * String Distance Calculator, e.g. {@link de.ur.ase.string_similarity.NeedlemanWunschDistance}
+     */
     public WordValidator(List<Frame> frameList, StringDistanceCalculator distanceCalculator) {
         this.frameList = frameList;
         this.distanceValues = new HashMap<>();
@@ -20,6 +35,9 @@ public class WordValidator {
         this.distanceCalculator = distanceCalculator;
     }
 
+    /**
+     * Starts the validation process.
+     */
     public void run() {
         for(int frameIndex = 0; frameIndex < frameList.size(); frameIndex++) {
             Frame frame = frameList.get(frameIndex);
@@ -40,6 +58,11 @@ public class WordValidator {
         }
     }
 
+    /**
+     * If the distance was already calculated, this method uses that value.
+     * @return
+     * the distance between the two words (0 = perfect)
+     */
     private double getDistance(String word, String otherWord) {
         double distance = -1;
 
@@ -60,6 +83,9 @@ public class WordValidator {
         return distance;
     }
 
+    /**
+     * Decomposition method. Puts the distance between word and otherWord in the {@link #distanceValues} map.
+     */
     private void putValueInDistanceValues(String word, String otherWord, double distance) {
         if(distanceValues.containsKey(word)) {
             distanceValues.get(word).put(otherWord, distance);
@@ -70,6 +96,10 @@ public class WordValidator {
         }
     }
 
+    /**
+     * If the distance is smaller than 1, this increases the boosts / likelihoods for both strings
+     * by (1 - distance)
+     */
     private void compareWords(String word, String otherWord) {
         double distance = getDistance(word, otherWord);
         if(distance == 0) {
@@ -82,14 +112,16 @@ public class WordValidator {
         }
     }
 
+    /**
+     * creates or adds the probability for this word.
+     */
     private void boostWord(String word, double boost) {
         if(!probabilities.containsKey(word)) {
             probabilities.put(word, new StringProbability(word, boost));
         } else {
-            probabilities.get(word).probability += boost;
+            probabilities.get(word).setProbability(probabilities.get(word).getProbability() + boost);
         }
     }
-
 
     public List<StringProbability> getStringProbabilities() {
         return new ArrayList<>(probabilities.values());

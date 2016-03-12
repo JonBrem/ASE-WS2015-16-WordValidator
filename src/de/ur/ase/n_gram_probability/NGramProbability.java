@@ -21,6 +21,7 @@ public class NGramProbability {
      * how often every chain of 3 characters occurs (which takes way longer; should only be done once, when the
      * list of files or some configuration changes).
      * @param pathForDictionaries
+     * Path where the dictionaries files are
      * @return
      * A ready-to-use NGramProbability
      */

@@ -1,5 +1,6 @@
 package de.ur.ase.trainings_evaluation;
 
+import de.ur.ase.FileUtils;
 import de.ur.ase.string_similarity.NeedlemanWunschDistance;
 import org.json.JSONObject;
 
@@ -9,10 +10,14 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.util.*;
 
+/**
+ * The main routine that analyses the training results.
+ */
 public class TrainingEvaluation {
 
     public static void main(String... args) {
-        new TrainingEvaluation("training_gold.json", "training_files_juergen2", "times_j2.txt", new SimilarityCalculator() {
+        // this inline class thing is bad style, but it works & it really only had to work once...
+        new TrainingEvaluation("training_gold.json", "training_files", "times.txt", new SimilarityCalculator() {
             @Override
             public float calculateSimilarity(Set<String> recognizedSet, Set<String> goldSet) {
                 if(recognizedSet == null) return 0;
@@ -35,13 +40,14 @@ public class TrainingEvaluation {
 
                 for(String word : recognizedSet) {
                     if(!lookedAt.contains(word)) {
-                        similarity -= 0.05;
+                        similarity -= 0.05; // small "punishment" for nonsense words
                     }
                 }
 
                 if(similarity < 0) similarity = 0;
                 return similarity / goldSet.size();
             }
+
 
             private float getHighestWordSimilarity(Set<String> recognizedSet, String actualWord, Set<String> lookedAt) {
                 float highestSimilarity = -1 * Float.MAX_VALUE;
@@ -55,7 +61,7 @@ public class TrainingEvaluation {
                     }
                 }
 
-                if(highestSimilarity == 0) {
+                if(highestSimilarity == 0) { // return here so that "lookedAt" isn't just a random word!!
                     return 0;
                 }
 
@@ -78,6 +84,9 @@ public class TrainingEvaluation {
     private List<Result> results;
 
 
+    /**
+     * The main routine that analyses the training results.
+     */
     public TrainingEvaluation(String goldStandardFile, String trainingFilesFolder, String timeDataFile, SimilarityCalculator similarityCalculator) {
         this.goldStandard = GoldStandard.fromFile(goldStandardFile);
         this.trainingFilesFolder = trainingFilesFolder;
@@ -92,12 +101,9 @@ public class TrainingEvaluation {
             parseFile(trainingFile);
         }
 
-        Collections.sort(results, new Comparator<Result>() {
-            @Override
-            public int compare(Result r1, Result r2) {
-                int scoreCompare = Float.compare(r1.getScore(), r2.getScore());
-                return scoreCompare == 0? Float.compare(r2.getTime(), r1.getTime()) : scoreCompare;
-            }
+        Collections.sort(results, (r1, r2) -> {
+            int scoreCompare = Float.compare(r1.getScore(), r2.getScore());
+            return scoreCompare == 0? Float.compare(r2.getTime(), r1.getTime()) : scoreCompare;
         });
 
         Collections.reverse(results);
@@ -107,8 +113,11 @@ public class TrainingEvaluation {
         }
     }
 
+    /**
+     * loads an {@link IterationData} object from the specified file & evaluates how good the results contained in the file are.
+     */
     private void parseFile(File file) {
-        IterationData iterationData = new IterationData(new JSONObject(readFile(file.getAbsolutePath())));
+        IterationData iterationData = new IterationData(new JSONObject(FileUtils.getFileContents(file.getAbsolutePath())));
 
         for(String frameId : goldStandard.getFrameIDs()) {
             forEveryFrameInGoldStandard(iterationData.getDataForFrame(frameId), goldStandard.getWordsForFrame(frameId), iterationData);
@@ -120,35 +129,17 @@ public class TrainingEvaluation {
         results.add(result);
     }
 
+    /**
+     * Calculates how well the recognised words match the gold standard.
+     */
     private void forEveryFrameInGoldStandard(Set<String> dataForFrame, Set<String> goldStandard, IterationData iterationData) {
         iterationData.addValue(similarityCalculator.calculateSimilarity(dataForFrame, goldStandard));
     }
+
 
     public interface SimilarityCalculator {
         float calculateSimilarity(Set<String> recognizedSet, Set<String> goldSet);
     }
 
-    /**
-     * Utility method for the training evaluation module.
-     * @param fileName
-     * @return
-     */
-    public static String readFile(String fileName) {
-        try {
-            BufferedReader reader = new BufferedReader(new FileReader(fileName));
-            StringBuilder b = new StringBuilder();
-            String line;
-            while((line = reader.readLine()) != null) {
-                b.append(line).append("\n");
-            }
-
-            reader.close();
-            return b.toString();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-
-        return null;
-    }
 
 }

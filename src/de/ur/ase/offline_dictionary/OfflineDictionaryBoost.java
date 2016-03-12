@@ -36,10 +36,10 @@ public class OfflineDictionaryBoost {
      * A StringProbability, likely created by the {@link WordValidator}
      */
     public void boost(StringProbability stringProbability) {
-        if(dictionary.contains(stringProbability.string)) {
-            stringProbability.probability *= BOOST_WORD_FOUND;
+        if(dictionary.contains(stringProbability.getString())) {
+            stringProbability.setProbability(stringProbability.getProbability() * BOOST_WORD_FOUND);
         } else {
-            stringProbability.probability *= BOOST_WORD_NOT_FOUND;
+            stringProbability.setProbability(stringProbability.getProbability() * BOOST_WORD_NOT_FOUND);
         }
     }
 

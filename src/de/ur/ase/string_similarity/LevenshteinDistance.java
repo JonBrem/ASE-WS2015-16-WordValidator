@@ -1,7 +1,23 @@
 package de.ur.ase.string_similarity;
 
+/**
+ * One of the three DistanceCalculator that were actually implemented
+ * (one was just "strings are equal? -> distance = 0, else -> 1" and just for testing).
+ * Read up on Levenshtein's algorithm online (e.g. <a href="https://de.wikipedia.org/wiki/Levenshtein-Distanz">wikipedia</a>)
+ */
 public class LevenshteinDistance implements StringDistanceCalculator {
 
+    /**
+     * Calculates the Levenshtein String distance between the two words.
+     *
+     * @param word1
+     * one of the two words.
+     * @param word2
+     * the other word.
+     * @return
+     * The Levenshtein Distance between the words, in relation to the longer word's length (0 == equal,
+     * 1 == completely different)
+     */
     @Override
     public double getDistance(String word1, String word2) {
         int levenshteinDistance = getLevenshteinDistance(word1, word2);
