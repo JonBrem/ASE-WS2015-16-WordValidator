@@ -162,8 +162,12 @@ public class OnlineLookup {
                 if (correctedResults == null) return Collections.singletonList(new StringProbability(correction.correctedQuery, word.getProbability()));
                 return correctedResults;
             } else if (correction != null && correction.commonString != null) {
-                word.setProbability(word.getProbability() * 2);
-                return Collections.singletonList(new StringProbability(correction.commonString, word.getProbability()));
+                bePoliteToCanoo();
+
+                word.setString(correction.commonString);
+                List<StringProbability> correctedResults = performCanooSearch(word, false); // must be false, otherwise: lots of recursion!!
+                if (correctedResults == null) return Collections.singletonList(new StringProbability(correction.commonString, word.getProbability()));
+                return correctedResults;
             } else if (wordIsVeryLikely(word)){ // word is very likely --> just take it, probably still better than doing nothing
                 return Collections.singletonList(word);
             } else {
